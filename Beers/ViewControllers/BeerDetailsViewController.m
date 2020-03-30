@@ -1,23 +1,24 @@
 //
-//  ViewController.m
+//  BeerDetailsViewController.m
 //  Beers
 //
 //  Created by Pedro Costa on 30/03/2020.
 //  Copyright © 2020 Pedro Costa. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "BeerDetailsViewController.h"
 
-@interface ViewController ()
+@interface BeerDetailsViewController ()
 
 @end
 
-@implementation ViewController
+@implementation BeerDetailsViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
 }
+
 
 
 @end

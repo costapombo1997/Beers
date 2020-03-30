@@ -3,13 +3,21 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DE2F875F8C135762902242D5 /* Pods_Beers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E189BBFE419A912C1B4D9AC7 /* Pods_Beers.framework */; };
+		EF62CF9B24321FDB009E38D7 /* BeersListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF62CF9A24321FDB009E38D7 /* BeersListViewController.m */; };
+		EF62CF9F243225DC009E38D7 /* ViewModelBase.m in Sources */ = {isa = PBXBuildFile; fileRef = EF62CF9E243225DC009E38D7 /* ViewModelBase.m */; };
+		EF62CFA22432340C009E38D7 /* BeerDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF62CFA12432340C009E38D7 /* BeerDetailsViewController.m */; };
+		EFA3F62C2431E6A5003AC6EB /* BeersViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA3F62B2431E6A5003AC6EB /* BeersViewModel.m */; };
+		EFA3F6302431ED59003AC6EB /* BeersRepo.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA3F62F2431ED59003AC6EB /* BeersRepo.m */; };
+		EFA3F6342431EE27003AC6EB /* BeerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA3F6332431EE27003AC6EB /* BeerModel.m */; };
+		EFA3F638243218CC003AC6EB /* BeerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFA3F637243218CC003AC6EB /* BeerCell.xib */; };
+		EFA3F63C24321AA2003AC6EB /* BeerCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA3F63B24321AA2003AC6EB /* BeerCellTableViewCell.m */; };
 		EFF9C3472431E22300C19D8C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF9C3462431E22300C19D8C /* AppDelegate.m */; };
 		EFF9C34A2431E22300C19D8C /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF9C3492431E22300C19D8C /* SceneDelegate.m */; };
-		EFF9C34D2431E22300C19D8C /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF9C34C2431E22300C19D8C /* ViewController.m */; };
 		EFF9C3502431E22300C19D8C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFF9C34E2431E22300C19D8C /* Main.storyboard */; };
 		EFF9C3532431E22300C19D8C /* Beers.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EFF9C3512431E22300C19D8C /* Beers.xcdatamodeld */; };
 		EFF9C3552431E22400C19D8C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EFF9C3542431E22400C19D8C /* Assets.xcassets */; };
@@ -18,19 +26,35 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		C6C7201612FC4CA73E978EF1 /* Pods-Beers.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Beers.debug.xcconfig"; path = "Target Support Files/Pods-Beers/Pods-Beers.debug.xcconfig"; sourceTree = "<group>"; };
+		E189BBFE419A912C1B4D9AC7 /* Pods_Beers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Beers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF62CF9924321FDB009E38D7 /* BeersListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BeersListViewController.h; sourceTree = "<group>"; };
+		EF62CF9A24321FDB009E38D7 /* BeersListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BeersListViewController.m; sourceTree = "<group>"; };
+		EF62CF9D243225DC009E38D7 /* ViewModelBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewModelBase.h; sourceTree = "<group>"; };
+		EF62CF9E243225DC009E38D7 /* ViewModelBase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewModelBase.m; sourceTree = "<group>"; };
+		EF62CFA02432340C009E38D7 /* BeerDetailsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BeerDetailsViewController.h; sourceTree = "<group>"; };
+		EF62CFA12432340C009E38D7 /* BeerDetailsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BeerDetailsViewController.m; sourceTree = "<group>"; };
+		EFA3F62A2431E6A5003AC6EB /* BeersViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BeersViewModel.h; sourceTree = "<group>"; };
+		EFA3F62B2431E6A5003AC6EB /* BeersViewModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BeersViewModel.m; sourceTree = "<group>"; };
+		EFA3F62E2431ED59003AC6EB /* BeersRepo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BeersRepo.h; sourceTree = "<group>"; };
+		EFA3F62F2431ED59003AC6EB /* BeersRepo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BeersRepo.m; sourceTree = "<group>"; };
+		EFA3F6322431EE27003AC6EB /* BeerModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BeerModel.h; sourceTree = "<group>"; };
+		EFA3F6332431EE27003AC6EB /* BeerModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BeerModel.m; sourceTree = "<group>"; };
+		EFA3F637243218CC003AC6EB /* BeerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BeerCell.xib; sourceTree = "<group>"; };
+		EFA3F63A24321AA2003AC6EB /* BeerCellTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BeerCellTableViewCell.h; sourceTree = "<group>"; };
+		EFA3F63B24321AA2003AC6EB /* BeerCellTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BeerCellTableViewCell.m; sourceTree = "<group>"; };
 		EFF9C3422431E22300C19D8C /* Beers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Beers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFF9C3452431E22300C19D8C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EFF9C3462431E22300C19D8C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		EFF9C3482431E22300C19D8C /* SceneDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SceneDelegate.h; sourceTree = "<group>"; };
 		EFF9C3492431E22300C19D8C /* SceneDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SceneDelegate.m; sourceTree = "<group>"; };
-		EFF9C34B2431E22300C19D8C /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		EFF9C34C2431E22300C19D8C /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		EFF9C34F2431E22300C19D8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EFF9C3522431E22300C19D8C /* Beers.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Beers.xcdatamodel; sourceTree = "<group>"; };
 		EFF9C3542431E22400C19D8C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EFF9C3572431E22400C19D8C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EFF9C3592431E22400C19D8C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EFF9C35A2431E22400C19D8C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		FC7C0D4A703C3E9BEAE6E183 /* Pods-Beers.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Beers.release.xcconfig"; path = "Target Support Files/Pods-Beers/Pods-Beers.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,17 +62,102 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DE2F875F8C135762902242D5 /* Pods_Beers.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7A400E6F907BF80DFD5109ED /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E189BBFE419A912C1B4D9AC7 /* Pods_Beers.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EF62CF9C2432259C009E38D7 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				EF62CF9D243225DC009E38D7 /* ViewModelBase.h */,
+				EF62CF9E243225DC009E38D7 /* ViewModelBase.m */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		EFA3F6252431E460003AC6EB /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				EF62CF9924321FDB009E38D7 /* BeersListViewController.h */,
+				EF62CF9A24321FDB009E38D7 /* BeersListViewController.m */,
+				EF62CFA02432340C009E38D7 /* BeerDetailsViewController.h */,
+				EF62CFA12432340C009E38D7 /* BeerDetailsViewController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		EFA3F6292431E664003AC6EB /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				EFA3F62A2431E6A5003AC6EB /* BeersViewModel.h */,
+				EFA3F62B2431E6A5003AC6EB /* BeersViewModel.m */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		EFA3F62D2431ED2D003AC6EB /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				EFA3F62E2431ED59003AC6EB /* BeersRepo.h */,
+				EFA3F62F2431ED59003AC6EB /* BeersRepo.m */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		EFA3F6312431EE18003AC6EB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EFA3F6322431EE27003AC6EB /* BeerModel.h */,
+				EFA3F6332431EE27003AC6EB /* BeerModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EFA3F635243202BA003AC6EB /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				EFF9C34E2431E22300C19D8C /* Main.storyboard */,
+				EFF9C3562431E22400C19D8C /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		EFA3F636243218BB003AC6EB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EFA3F63924321A79003AC6EB /* BeerCell */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EFA3F63924321A79003AC6EB /* BeerCell */ = {
+			isa = PBXGroup;
+			children = (
+				EFA3F637243218CC003AC6EB /* BeerCell.xib */,
+				EFA3F63A24321AA2003AC6EB /* BeerCellTableViewCell.h */,
+				EFA3F63B24321AA2003AC6EB /* BeerCellTableViewCell.m */,
+			);
+			path = BeerCell;
+			sourceTree = "<group>";
+		};
 		EFF9C3392431E22300C19D8C = {
 			isa = PBXGroup;
 			children = (
 				EFF9C3442431E22300C19D8C /* Beers */,
 				EFF9C3432431E22300C19D8C /* Products */,
+				FC99702E93BF524D8AF64814 /* Pods */,
+				7A400E6F907BF80DFD5109ED /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -63,20 +172,32 @@
 		EFF9C3442431E22300C19D8C /* Beers */ = {
 			isa = PBXGroup;
 			children = (
+				EF62CF9C2432259C009E38D7 /* Library */,
+				EFA3F636243218BB003AC6EB /* Views */,
+				EFA3F635243202BA003AC6EB /* Storyboards */,
+				EFA3F6312431EE18003AC6EB /* Models */,
+				EFA3F62D2431ED2D003AC6EB /* Repositories */,
+				EFA3F6292431E664003AC6EB /* ViewModels */,
+				EFA3F6252431E460003AC6EB /* ViewControllers */,
 				EFF9C3452431E22300C19D8C /* AppDelegate.h */,
 				EFF9C3462431E22300C19D8C /* AppDelegate.m */,
 				EFF9C3482431E22300C19D8C /* SceneDelegate.h */,
 				EFF9C3492431E22300C19D8C /* SceneDelegate.m */,
-				EFF9C34B2431E22300C19D8C /* ViewController.h */,
-				EFF9C34C2431E22300C19D8C /* ViewController.m */,
-				EFF9C34E2431E22300C19D8C /* Main.storyboard */,
 				EFF9C3542431E22400C19D8C /* Assets.xcassets */,
-				EFF9C3562431E22400C19D8C /* LaunchScreen.storyboard */,
 				EFF9C3592431E22400C19D8C /* Info.plist */,
 				EFF9C35A2431E22400C19D8C /* main.m */,
 				EFF9C3512431E22300C19D8C /* Beers.xcdatamodeld */,
 			);
 			path = Beers;
+			sourceTree = "<group>";
+		};
+		FC99702E93BF524D8AF64814 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				C6C7201612FC4CA73E978EF1 /* Pods-Beers.debug.xcconfig */,
+				FC7C0D4A703C3E9BEAE6E183 /* Pods-Beers.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -86,9 +207,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EFF9C35E2431E22400C19D8C /* Build configuration list for PBXNativeTarget "Beers" */;
 			buildPhases = (
+				A1DBA5BA31B9E63A40CDEB68 /* [CP] Check Pods Manifest.lock */,
 				EFF9C33E2431E22300C19D8C /* Sources */,
 				EFF9C33F2431E22300C19D8C /* Frameworks */,
 				EFF9C3402431E22300C19D8C /* Resources */,
+				EF580012EFA44DE01FB771F8 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -136,6 +259,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFA3F638243218CC003AC6EB /* BeerCell.xib in Resources */,
 				EFF9C3582431E22400C19D8C /* LaunchScreen.storyboard in Resources */,
 				EFF9C3552431E22400C19D8C /* Assets.xcassets in Resources */,
 				EFF9C3502431E22300C19D8C /* Main.storyboard in Resources */,
@@ -144,16 +268,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		A1DBA5BA31B9E63A40CDEB68 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Beers-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EF580012EFA44DE01FB771F8 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Beers/Pods-Beers-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Beers/Pods-Beers-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Beers/Pods-Beers-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EFF9C33E2431E22300C19D8C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EF62CF9B24321FDB009E38D7 /* BeersListViewController.m in Sources */,
 				EFF9C35B2431E22400C19D8C /* main.m in Sources */,
-				EFF9C34D2431E22300C19D8C /* ViewController.m in Sources */,
+				EFA3F63C24321AA2003AC6EB /* BeerCellTableViewCell.m in Sources */,
+				EFA3F6302431ED59003AC6EB /* BeersRepo.m in Sources */,
 				EFF9C3472431E22300C19D8C /* AppDelegate.m in Sources */,
 				EFF9C34A2431E22300C19D8C /* SceneDelegate.m in Sources */,
+				EF62CFA22432340C009E38D7 /* BeerDetailsViewController.m in Sources */,
+				EFA3F6342431EE27003AC6EB /* BeerModel.m in Sources */,
+				EFA3F62C2431E6A5003AC6EB /* BeersViewModel.m in Sources */,
 				EFF9C3532431E22300C19D8C /* Beers.xcdatamodeld in Sources */,
+				EF62CF9F243225DC009E38D7 /* ViewModelBase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +463,7 @@
 		};
 		EFF9C35F2431E22400C19D8C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C6C7201612FC4CA73E978EF1 /* Pods-Beers.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -308,6 +481,7 @@
 		};
 		EFF9C3602431E22400C19D8C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC7C0D4A703C3E9BEAE6E183 /* Pods-Beers.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

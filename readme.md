@@ -1,4 +1,6 @@
+
 => ViewController => ViewModel => Model
+
                      |
                      |
                       --- Repositiories

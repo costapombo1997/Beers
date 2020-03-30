@@ -16,7 +16,7 @@ NS_ASSUME_NONNULL_BEGIN
 }
 
 - (void) listenEvent:(NSString *)eventName callback:(void(^)(id)) callback;
-
+- (void) triggerEvent:(NSString *)eventName param:(id) param;
 @end
 
 NS_ASSUME_NONNULL_END

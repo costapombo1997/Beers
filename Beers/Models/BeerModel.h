@@ -12,7 +12,15 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface BeerModel : NSObject
 
-    
+@property int id;
+@property NSString *name;
+@property NSString *tagline;
+@property NSString *firstBrewed;
+@property NSString *description;
+@property NSString *imageUrl;
+@property float abv;
+@property float ibu;
+//.........
 
 @end
 

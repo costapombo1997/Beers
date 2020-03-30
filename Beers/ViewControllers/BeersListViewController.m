@@ -16,16 +16,27 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    viewModel = [BeersViewModel new];
-    
     [self.tableView registerNib:[UINib nibWithNibName:@"BeerCell" bundle:nil] forCellReuseIdentifier:@"BeerCell" ];
-   
-    
+    viewModel = [BeersViewModel new];
+        
+    self.title = @"Beers";
+    self.loadingLabel.hidden = !(self.tableView.hidden = self->viewModel.isLoading);
+        
+    [viewModel fetchList:viewModel.currentPage itemsPerPage:viewModel.itemsPerPage sucessHandler:nil errorHandler:nil];
     
     [viewModel listenEvent:@"isLoadingChange" callback:^(id param){
-        self.tableView.hidden = !(self.loadingView.hidden = self->viewModel.isLoading);
+        self.loadingLabel.hidden = !(self.tableView.hidden = self->viewModel.isLoading);
+          // do not show large title if loading labes is active
+        self.navigationController.navigationBar.prefersLargeTitles = !self->viewModel.isLoading;
     }];
     
+    
+    [viewModel listenEvent:@"updateBeerList" callback:^(id param){
+        [self.tableView reloadData];
+    }];
+    
+    
+  
     
 }
 
@@ -44,18 +55,34 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return viewModel.beers.count;
+    return [viewModel.beers count];
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     BeerCellTableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"BeerCell" forIndexPath:indexPath];
     
-    cell.titleLabel = viewModel.beers[indexPath.row]; // TODO: set title
+    BeerModel *beer = viewModel.beers[indexPath.row];
     
-    cell.titleLabel = viewModel.beers[indexPath.row]; // TODO: set description
-    
+    cell.titleLabel.text = beer.name;
+    cell.descriptionLabel.text = beer.description;
+    NSData * imageData = [NSData dataWithContentsOfURL:[NSURL URLWithString:beer.imageUrl]];
+
+    cell.imageImageView.image = [UIImage imageWithData:imageData] ;
+            
     return cell;
+}
+
+
+
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
+
+    float endScrolling = scrollView.contentOffset.y + scrollView.frame.size.height;
+
+    if (!viewModel.isLoading && endScrolling >= scrollView.contentSize.height){
+        viewModel.currentPage += 1;
+        [viewModel fetchList:viewModel.currentPage itemsPerPage:viewModel.itemsPerPage sucessHandler:nil errorHandler:nil];
+    }
 }
 
 

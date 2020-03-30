@@ -18,17 +18,20 @@
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KQf-58-K7o">
                         <rect key="frame" x="20" y="11" width="100" height="100"/>
                         <constraints>
-                            <constraint firstAttribute="height" constant="100" id="7Xq-X9-GXv"/>
+                            <constraint firstAttribute="height" constant="100" id="OIY-EJ-aIN"/>
                             <constraint firstAttribute="width" constant="100" id="mJi-iN-FIO"/>
                         </constraints>
                     </imageView>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Beer Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fdq-jc-jWx">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Beer Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fdq-jc-jWx">
                         <rect key="frame" x="128" y="11" width="325" height="34"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="34" id="4mX-Vf-f1L"/>
+                        </constraints>
                         <fontDescription key="fontDescription" style="UICTFontTextStyleTitle1"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Beer description" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JZI-z9-tFi">
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Beer description" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JZI-z9-tFi">
                         <rect key="frame" x="128" y="51" width="325" height="60"/>
                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                         <nil key="textColor"/>
@@ -36,16 +39,15 @@
                     </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="fdq-jc-jWx" firstAttribute="top" secondItem="D5J-eK-41e" secondAttribute="top" constant="11" id="3KM-c6-R05"/>
-                    <constraint firstItem="JZI-z9-tFi" firstAttribute="leading" secondItem="KQf-58-K7o" secondAttribute="trailing" constant="8" id="4Xk-dr-w21"/>
-                    <constraint firstItem="JZI-z9-tFi" firstAttribute="top" secondItem="fdq-jc-jWx" secondAttribute="bottom" constant="6" id="6QF-eF-0dw"/>
-                    <constraint firstItem="KQf-58-K7o" firstAttribute="leading" secondItem="D5J-eK-41e" secondAttribute="leading" constant="20" id="6tr-yo-9sG"/>
-                    <constraint firstAttribute="bottom" secondItem="JZI-z9-tFi" secondAttribute="bottom" constant="12" id="DQX-lG-ksr"/>
-                    <constraint firstAttribute="bottom" secondItem="KQf-58-K7o" secondAttribute="bottom" constant="12" id="FI7-5W-WNS"/>
-                    <constraint firstAttribute="trailing" secondItem="fdq-jc-jWx" secondAttribute="trailing" constant="20" id="GzA-JH-oM7"/>
-                    <constraint firstItem="fdq-jc-jWx" firstAttribute="leading" secondItem="KQf-58-K7o" secondAttribute="trailing" constant="8" id="bsG-DO-weJ"/>
-                    <constraint firstItem="KQf-58-K7o" firstAttribute="top" secondItem="D5J-eK-41e" secondAttribute="top" constant="11" id="lmB-Fd-vjI"/>
-                    <constraint firstAttribute="trailing" secondItem="JZI-z9-tFi" secondAttribute="trailing" constant="20" id="nbc-ce-r6d"/>
+                    <constraint firstItem="KQf-58-K7o" firstAttribute="leading" secondItem="D5J-eK-41e" secondAttribute="leading" constant="20" id="8OW-Jr-dAo"/>
+                    <constraint firstAttribute="bottom" secondItem="JZI-z9-tFi" secondAttribute="bottom" constant="12" id="A07-MV-9Bg"/>
+                    <constraint firstItem="fdq-jc-jWx" firstAttribute="leading" secondItem="KQf-58-K7o" secondAttribute="trailing" constant="8" id="Rp1-89-VVK"/>
+                    <constraint firstItem="JZI-z9-tFi" firstAttribute="leading" secondItem="KQf-58-K7o" secondAttribute="trailing" constant="8" id="U2F-RW-UgJ"/>
+                    <constraint firstItem="KQf-58-K7o" firstAttribute="top" secondItem="D5J-eK-41e" secondAttribute="top" constant="11" id="b1u-27-ggB"/>
+                    <constraint firstItem="fdq-jc-jWx" firstAttribute="top" secondItem="D5J-eK-41e" secondAttribute="top" constant="11" id="npa-vP-jUD"/>
+                    <constraint firstAttribute="trailing" secondItem="fdq-jc-jWx" secondAttribute="trailing" constant="20" id="oZH-Wo-dUD"/>
+                    <constraint firstAttribute="trailing" secondItem="JZI-z9-tFi" secondAttribute="trailing" constant="20" id="pXR-XT-q1E"/>
+                    <constraint firstItem="JZI-z9-tFi" firstAttribute="top" secondItem="fdq-jc-jWx" secondAttribute="bottom" constant="6" id="sBD-WZ-4En"/>
                 </constraints>
             </tableViewCellContentView>
             <connections>
@@ -53,7 +55,7 @@
                 <outlet property="imageImageView" destination="KQf-58-K7o" id="1bz-Ep-qWz"/>
                 <outlet property="titleLabel" destination="fdq-jc-jWx" id="1vD-Gr-QTQ"/>
             </connections>
-            <point key="canvasLocation" x="279" y="24"/>
+            <point key="canvasLocation" x="71.739130434782609" y="19.754464285714285"/>
         </tableViewCell>
     </objects>
 </document>

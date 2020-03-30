@@ -14,7 +14,7 @@ typedef void (^eventCallbackType)(id);
 {
     self = [super init];
     if (self) {
-        events = [NSDictionary new];
+        events = [NSMutableDictionary new];
     }
     return self;
 }
@@ -25,8 +25,8 @@ typedef void (^eventCallbackType)(id);
 - (void)listenEvent:(NSString *)eventName callback:(eventCallbackType)callback{
     
     if(![events objectForKey:eventName]){
-        NSDictionary *dictionary = [NSDictionary new];
-        [events setValue:dictionary forKey:eventName];
+        NSMutableArray *callbackArray = [NSMutableArray new];
+        [events setValue:callbackArray forKey:eventName];
     }
     
     [[events objectForKey:eventName] addObject:callback];

@@ -17,7 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
     BeersViewModel *viewModel;
 }
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
-@property (weak, nonatomic) IBOutlet UIView *loadingView;
+@property (weak, nonatomic) IBOutlet UILabel *loadingLabel;
 
 @end
 

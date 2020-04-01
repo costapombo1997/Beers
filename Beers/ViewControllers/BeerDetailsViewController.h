@@ -7,11 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BeerModel.h"
+
+#import "BeerDetailsHeaderCellTableViewCell.h"
+#import "BeerDetailsDetailCellTableViewCell.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface BeerDetailsViewController : UIViewController
-
+@interface BeerDetailsViewController : UIViewController <UITableViewDelegate>
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property BeerModel *beerAsModel;
 @end
 
 NS_ASSUME_NONNULL_END

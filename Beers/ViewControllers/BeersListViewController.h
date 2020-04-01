@@ -9,7 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "BeersViewModel.h"
 #import "BeerCellTableViewCell.h"
+#import "LoadingCellTableViewCell.h"
 
+#import "BeerDetailsViewController.h"
 NS_ASSUME_NONNULL_BEGIN
 
 @interface BeersListViewController : UIViewController <UITableViewDelegate>

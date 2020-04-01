@@ -10,7 +10,6 @@
 
 @implementation BeerModel
 
-
 @synthesize name;
 @synthesize description;
 @synthesize imageUrl;

@@ -37,10 +37,15 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
+                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="SlE-vM-AGw">
+                        <rect key="frame" x="52" y="43" width="37" height="37"/>
+                    </activityIndicatorView>
                 </subviews>
                 <constraints>
                     <constraint firstItem="KQf-58-K7o" firstAttribute="leading" secondItem="D5J-eK-41e" secondAttribute="leading" constant="20" id="8OW-Jr-dAo"/>
                     <constraint firstAttribute="bottom" secondItem="JZI-z9-tFi" secondAttribute="bottom" constant="12" id="A07-MV-9Bg"/>
+                    <constraint firstItem="SlE-vM-AGw" firstAttribute="leading" secondItem="D5J-eK-41e" secondAttribute="leading" constant="52" id="BDs-IL-GLf"/>
+                    <constraint firstItem="SlE-vM-AGw" firstAttribute="top" secondItem="D5J-eK-41e" secondAttribute="top" constant="43" id="KzZ-1c-tA2"/>
                     <constraint firstItem="fdq-jc-jWx" firstAttribute="leading" secondItem="KQf-58-K7o" secondAttribute="trailing" constant="8" id="Rp1-89-VVK"/>
                     <constraint firstItem="JZI-z9-tFi" firstAttribute="leading" secondItem="KQf-58-K7o" secondAttribute="trailing" constant="8" id="U2F-RW-UgJ"/>
                     <constraint firstItem="KQf-58-K7o" firstAttribute="top" secondItem="D5J-eK-41e" secondAttribute="top" constant="11" id="b1u-27-ggB"/>
@@ -53,6 +58,7 @@
             <connections>
                 <outlet property="descriptionLabel" destination="JZI-z9-tFi" id="UQw-EM-ea4"/>
                 <outlet property="imageImageView" destination="KQf-58-K7o" id="1bz-Ep-qWz"/>
+                <outlet property="imageImageViewActivityIndicator" destination="SlE-vM-AGw" id="5cn-SS-QrV"/>
                 <outlet property="titleLabel" destination="fdq-jc-jWx" id="1vD-Gr-QTQ"/>
             </connections>
             <point key="canvasLocation" x="71.739130434782609" y="19.754464285714285"/>

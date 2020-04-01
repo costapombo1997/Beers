@@ -20,6 +20,12 @@ NS_ASSUME_NONNULL_BEGIN
 @property NSString *imageUrl;
 @property float abv;
 @property float ibu;
+
+
+@property NSArray *foodPairing;
+@property NSString *brewersTips;
+
+
 //.........
 
 @end

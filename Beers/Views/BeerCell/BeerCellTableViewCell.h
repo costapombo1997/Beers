@@ -13,6 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface BeerCellTableViewCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UIImageView *imageImageView;
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+@property (weak, nonatomic) IBOutlet UIActivityIndicatorView *imageImageViewActivityIndicator;
 @property (weak, nonatomic) IBOutlet UILabel *descriptionLabel;
 @end
 

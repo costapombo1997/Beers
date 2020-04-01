@@ -9,13 +9,18 @@
 /* Begin PBXBuildFile section */
 		DE2F875F8C135762902242D5 /* Pods_Beers.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E189BBFE419A912C1B4D9AC7 /* Pods_Beers.framework */; };
 		EF62CF9B24321FDB009E38D7 /* BeersListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF62CF9A24321FDB009E38D7 /* BeersListViewController.m */; };
-		EF62CF9F243225DC009E38D7 /* ViewModelBase.m in Sources */ = {isa = PBXBuildFile; fileRef = EF62CF9E243225DC009E38D7 /* ViewModelBase.m */; };
 		EF62CFA22432340C009E38D7 /* BeerDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EF62CFA12432340C009E38D7 /* BeerDetailsViewController.m */; };
 		EFA3F62C2431E6A5003AC6EB /* BeersViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA3F62B2431E6A5003AC6EB /* BeersViewModel.m */; };
 		EFA3F6302431ED59003AC6EB /* BeersRepo.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA3F62F2431ED59003AC6EB /* BeersRepo.m */; };
 		EFA3F6342431EE27003AC6EB /* BeerModel.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA3F6332431EE27003AC6EB /* BeerModel.m */; };
 		EFA3F638243218CC003AC6EB /* BeerCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFA3F637243218CC003AC6EB /* BeerCell.xib */; };
 		EFA3F63C24321AA2003AC6EB /* BeerCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EFA3F63B24321AA2003AC6EB /* BeerCellTableViewCell.m */; };
+		EFC6EE1424336B39008CD1B0 /* LoadingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFC6EE1324336B38008CD1B0 /* LoadingCell.xib */; };
+		EFC6EE1724336B73008CD1B0 /* LoadingCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EFC6EE1624336B73008CD1B0 /* LoadingCellTableViewCell.m */; };
+		EFD7C5822433B20500DB23C9 /* BeerDetailsHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFD7C5812433B20500DB23C9 /* BeerDetailsHeaderCell.xib */; };
+		EFD7C5852433B27200DB23C9 /* BeerDetailsHeaderCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EFD7C5842433B27200DB23C9 /* BeerDetailsHeaderCellTableViewCell.m */; };
+		EFE2BF342434AA77008E7F78 /* BeerDetailsDetailCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EFE2BF332434AA77008E7F78 /* BeerDetailsDetailCell.xib */; };
+		EFE2BF372434AA97008E7F78 /* BeerDetailsDetailCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EFE2BF362434AA97008E7F78 /* BeerDetailsDetailCellTableViewCell.m */; };
 		EFF9C3472431E22300C19D8C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF9C3462431E22300C19D8C /* AppDelegate.m */; };
 		EFF9C34A2431E22300C19D8C /* SceneDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EFF9C3492431E22300C19D8C /* SceneDelegate.m */; };
 		EFF9C3502431E22300C19D8C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EFF9C34E2431E22300C19D8C /* Main.storyboard */; };
@@ -30,8 +35,6 @@
 		E189BBFE419A912C1B4D9AC7 /* Pods_Beers.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Beers.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EF62CF9924321FDB009E38D7 /* BeersListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BeersListViewController.h; sourceTree = "<group>"; };
 		EF62CF9A24321FDB009E38D7 /* BeersListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BeersListViewController.m; sourceTree = "<group>"; };
-		EF62CF9D243225DC009E38D7 /* ViewModelBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewModelBase.h; sourceTree = "<group>"; };
-		EF62CF9E243225DC009E38D7 /* ViewModelBase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewModelBase.m; sourceTree = "<group>"; };
 		EF62CFA02432340C009E38D7 /* BeerDetailsViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BeerDetailsViewController.h; sourceTree = "<group>"; };
 		EF62CFA12432340C009E38D7 /* BeerDetailsViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BeerDetailsViewController.m; sourceTree = "<group>"; };
 		EFA3F62A2431E6A5003AC6EB /* BeersViewModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BeersViewModel.h; sourceTree = "<group>"; };
@@ -43,6 +46,15 @@
 		EFA3F637243218CC003AC6EB /* BeerCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BeerCell.xib; sourceTree = "<group>"; };
 		EFA3F63A24321AA2003AC6EB /* BeerCellTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BeerCellTableViewCell.h; sourceTree = "<group>"; };
 		EFA3F63B24321AA2003AC6EB /* BeerCellTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BeerCellTableViewCell.m; sourceTree = "<group>"; };
+		EFC6EE1324336B38008CD1B0 /* LoadingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoadingCell.xib; sourceTree = "<group>"; };
+		EFC6EE1524336B73008CD1B0 /* LoadingCellTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoadingCellTableViewCell.h; sourceTree = "<group>"; };
+		EFC6EE1624336B73008CD1B0 /* LoadingCellTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoadingCellTableViewCell.m; sourceTree = "<group>"; };
+		EFD7C5812433B20500DB23C9 /* BeerDetailsHeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BeerDetailsHeaderCell.xib; sourceTree = "<group>"; };
+		EFD7C5832433B27200DB23C9 /* BeerDetailsHeaderCellTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BeerDetailsHeaderCellTableViewCell.h; sourceTree = "<group>"; };
+		EFD7C5842433B27200DB23C9 /* BeerDetailsHeaderCellTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BeerDetailsHeaderCellTableViewCell.m; sourceTree = "<group>"; };
+		EFE2BF332434AA77008E7F78 /* BeerDetailsDetailCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BeerDetailsDetailCell.xib; sourceTree = "<group>"; };
+		EFE2BF352434AA97008E7F78 /* BeerDetailsDetailCellTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BeerDetailsDetailCellTableViewCell.h; sourceTree = "<group>"; };
+		EFE2BF362434AA97008E7F78 /* BeerDetailsDetailCellTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BeerDetailsDetailCellTableViewCell.m; sourceTree = "<group>"; };
 		EFF9C3422431E22300C19D8C /* Beers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Beers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFF9C3452431E22300C19D8C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EFF9C3462431E22300C19D8C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -75,15 +87,6 @@
 				E189BBFE419A912C1B4D9AC7 /* Pods_Beers.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		EF62CF9C2432259C009E38D7 /* Library */ = {
-			isa = PBXGroup;
-			children = (
-				EF62CF9D243225DC009E38D7 /* ViewModelBase.h */,
-				EF62CF9E243225DC009E38D7 /* ViewModelBase.m */,
-			);
-			path = Library;
 			sourceTree = "<group>";
 		};
 		EFA3F6252431E460003AC6EB /* ViewControllers */ = {
@@ -136,6 +139,9 @@
 		EFA3F636243218BB003AC6EB /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				EFE2BF322434AA56008E7F78 /* BeerDetailsDetailCell */,
+				EFD7C5802433B1D300DB23C9 /* BeerDetailsPhotoCell */,
+				EFC6EE1224336B23008CD1B0 /* LoadingCell */,
 				EFA3F63924321A79003AC6EB /* BeerCell */,
 			);
 			path = Views;
@@ -149,6 +155,36 @@
 				EFA3F63B24321AA2003AC6EB /* BeerCellTableViewCell.m */,
 			);
 			path = BeerCell;
+			sourceTree = "<group>";
+		};
+		EFC6EE1224336B23008CD1B0 /* LoadingCell */ = {
+			isa = PBXGroup;
+			children = (
+				EFC6EE1324336B38008CD1B0 /* LoadingCell.xib */,
+				EFC6EE1524336B73008CD1B0 /* LoadingCellTableViewCell.h */,
+				EFC6EE1624336B73008CD1B0 /* LoadingCellTableViewCell.m */,
+			);
+			path = LoadingCell;
+			sourceTree = "<group>";
+		};
+		EFD7C5802433B1D300DB23C9 /* BeerDetailsPhotoCell */ = {
+			isa = PBXGroup;
+			children = (
+				EFD7C5812433B20500DB23C9 /* BeerDetailsHeaderCell.xib */,
+				EFD7C5832433B27200DB23C9 /* BeerDetailsHeaderCellTableViewCell.h */,
+				EFD7C5842433B27200DB23C9 /* BeerDetailsHeaderCellTableViewCell.m */,
+			);
+			path = BeerDetailsPhotoCell;
+			sourceTree = "<group>";
+		};
+		EFE2BF322434AA56008E7F78 /* BeerDetailsDetailCell */ = {
+			isa = PBXGroup;
+			children = (
+				EFE2BF332434AA77008E7F78 /* BeerDetailsDetailCell.xib */,
+				EFE2BF352434AA97008E7F78 /* BeerDetailsDetailCellTableViewCell.h */,
+				EFE2BF362434AA97008E7F78 /* BeerDetailsDetailCellTableViewCell.m */,
+			);
+			path = BeerDetailsDetailCell;
 			sourceTree = "<group>";
 		};
 		EFF9C3392431E22300C19D8C = {
@@ -172,7 +208,6 @@
 		EFF9C3442431E22300C19D8C /* Beers */ = {
 			isa = PBXGroup;
 			children = (
-				EF62CF9C2432259C009E38D7 /* Library */,
 				EFA3F636243218BB003AC6EB /* Views */,
 				EFA3F635243202BA003AC6EB /* Storyboards */,
 				EFA3F6312431EE18003AC6EB /* Models */,
@@ -260,9 +295,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				EFA3F638243218CC003AC6EB /* BeerCell.xib in Resources */,
+				EFC6EE1424336B39008CD1B0 /* LoadingCell.xib in Resources */,
 				EFF9C3582431E22400C19D8C /* LaunchScreen.storyboard in Resources */,
+				EFE2BF342434AA77008E7F78 /* BeerDetailsDetailCell.xib in Resources */,
 				EFF9C3552431E22400C19D8C /* Assets.xcassets in Resources */,
 				EFF9C3502431E22300C19D8C /* Main.storyboard in Resources */,
+				EFD7C5822433B20500DB23C9 /* BeerDetailsHeaderCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,11 +359,13 @@
 				EFA3F6302431ED59003AC6EB /* BeersRepo.m in Sources */,
 				EFF9C3472431E22300C19D8C /* AppDelegate.m in Sources */,
 				EFF9C34A2431E22300C19D8C /* SceneDelegate.m in Sources */,
+				EFE2BF372434AA97008E7F78 /* BeerDetailsDetailCellTableViewCell.m in Sources */,
 				EF62CFA22432340C009E38D7 /* BeerDetailsViewController.m in Sources */,
+				EFD7C5852433B27200DB23C9 /* BeerDetailsHeaderCellTableViewCell.m in Sources */,
 				EFA3F6342431EE27003AC6EB /* BeerModel.m in Sources */,
 				EFA3F62C2431E6A5003AC6EB /* BeersViewModel.m in Sources */,
 				EFF9C3532431E22300C19D8C /* Beers.xcdatamodeld in Sources */,
-				EF62CF9F243225DC009E38D7 /* ViewModelBase.m in Sources */,
+				EFC6EE1724336B73008CD1B0 /* LoadingCellTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -14,10 +14,11 @@
 {
     self = [super init];
     if (self) {
-        self.isLoading = YES;
         //defaults
         self.currentPage = 1;
         self.itemsPerPage = 10;
+        self.hasReachedtheEnd = NO;
+        self.isLoading = NO;
         self.beers = [NSMutableArray new];
     }
     return self;
@@ -25,35 +26,36 @@
 
 
 
+
 // values just for demo
 - (void)fetchList:(int)page itemsPerPage:(int)per_page sucessHandler:(void (^)(NSArray * _Nonnull))successHandler errorHandler:(void (^)(NSDictionary * _Nonnull))errorHandler{
-    
-    NSLog(@"Fetching");
-    
+    self.isLoading = YES;
     [BeersRepo fetchList:page itemsPerPage:per_page sucessHandler:^(NSArray * data){
-        // probably using setters to trigger events ?!
-        
+       
         for (NSDictionary *rawBeer in data) {
             BeerModel *beer = [BeerModel new];
             beer.name = [rawBeer objectForKey:@"name"];
             beer.description = [rawBeer objectForKey:@"description"];
             beer.imageUrl = [rawBeer objectForKey:@"image_url"];
+            beer.brewersTips = [rawBeer objectForKey:@"brewers_tips"];
+            beer.tagline = [rawBeer objectForKey:@"tagline"];
             [self.beers addObject:beer];
         }
         
+        
+        if([data count] == 0){
+            self.hasReachedtheEnd = YES;
+        }
         self.isLoading = NO;
         
-        [self triggerEvent:@"updateBeerList" param:self.beers];
-        [self triggerEvent:@"isLoadingChange" param:self.beers];
-        
+        successHandler(self.beers);
+                
     } errorHandler:^(NSDictionary * error){
         self.isLoading = NO;
-        self.error = error;
-        // do something
+        errorHandler(error);
     }];
 }
 
-- (void)fetchBeer:(int)beerId sucessHandler:(void (^)(NSArray * _Nonnull))successHandler errorHandler:(void (^)(NSDictionary * _Nonnull))errorHandler{}
 
 
 @end

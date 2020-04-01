@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" reuseIdentifier="BeerDetailsHeaderCell" rowHeight="394" id="ntb-s4-sol" customClass="BeerDetailsHeaderCellTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="446" height="394"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ntb-s4-sol" id="6bf-fR-qGx">
+                <rect key="frame" x="0.0" y="0.0" width="446" height="394"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hourglass.bottomhalf.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="eKr-Eq-jZB">
+                        <rect key="frame" x="115.66666666666669" y="31.666666666666657" width="215" height="212"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="215" id="bIu-HH-UTi"/>
+                            <constraint firstAttribute="height" constant="215" id="vsc-oi-1ux"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z0n-vn-Ngy">
+                        <rect key="frame" x="20" y="260" width="406" height="108"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="z0n-vn-Ngy" firstAttribute="top" secondItem="eKr-Eq-jZB" secondAttribute="bottom" constant="15" id="3Hs-Vn-32X"/>
+                    <constraint firstAttribute="bottom" secondItem="z0n-vn-Ngy" secondAttribute="bottom" constant="26" id="Hi4-nh-Ke1"/>
+                    <constraint firstItem="eKr-Eq-jZB" firstAttribute="centerX" secondItem="6bf-fR-qGx" secondAttribute="centerX" id="fu1-iw-EuT"/>
+                    <constraint firstAttribute="trailing" secondItem="z0n-vn-Ngy" secondAttribute="trailing" constant="20" id="kK9-mX-xaR"/>
+                    <constraint firstItem="eKr-Eq-jZB" firstAttribute="top" secondItem="6bf-fR-qGx" secondAttribute="top" constant="30" id="m2Y-OT-eDb"/>
+                    <constraint firstItem="z0n-vn-Ngy" firstAttribute="leading" secondItem="6bf-fR-qGx" secondAttribute="leading" constant="20" id="rs4-io-7K1"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="imageView" destination="eKr-Eq-jZB" id="okp-Lv-3Ft"/>
+                <outlet property="titleLabel" destination="z0n-vn-Ngy" id="a4y-dB-Mak"/>
+            </connections>
+            <point key="canvasLocation" x="282.60869565217394" y="30.133928571428569"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="hourglass.bottomhalf.fill" catalog="system" width="54" height="64"/>
+    </resources>
+</document>

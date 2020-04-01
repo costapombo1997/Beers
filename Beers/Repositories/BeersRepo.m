@@ -17,7 +17,7 @@
     [manager GET:@"https://api.punkapi.com/v2/beers" parameters:params progress:nil success:^(NSURLSessionTask *task, id responseObject){
         successHandler(responseObject);
     } failure:^(NSURLSessionTask *operation, NSError *error){
-        NSLog(@"Error: %@", error);
+        errorHandler ?: errorHandler(error);
     }];
     
 }

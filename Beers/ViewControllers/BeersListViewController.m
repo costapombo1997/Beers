@@ -83,7 +83,7 @@
     cell.titleLabel.text = beer.name;
     cell.descriptionLabel.text = beer.description;
     
-    
+    cell.imageImageViewActivityIndicator.hidesWhenStopped = YES;
     [cell.imageImageViewActivityIndicator startAnimating];
     
     dispatch_async(dispatch_get_main_queue(), ^{

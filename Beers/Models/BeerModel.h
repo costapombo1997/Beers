@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-
+#import <UIKit/UIKit.h>
 NS_ASSUME_NONNULL_BEGIN
 
 @interface BeerModel : NSObject
@@ -17,6 +17,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property NSString *tagline;
 @property NSString *firstBrewed;
 @property NSString *description;
+@property UIImage  *image;
 @property NSString *imageUrl;
 @property float abv;
 @property float ibu;

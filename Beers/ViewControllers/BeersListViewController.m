@@ -30,7 +30,7 @@
         [self.tableView reloadData];
         self.loadingLabel.hidden = !(self.tableView.hidden = self->viewModel.isLoading);
         
-    } errorHandler:^(NSDictionary *errors){
+    } errorHandler:^(NSError *errors){
        self.loadingLabel.hidden = YES;
     }];
     
@@ -83,15 +83,17 @@
     cell.titleLabel.text = beer.name;
     cell.descriptionLabel.text = beer.description;
     
-    cell.imageImageViewActivityIndicator.hidesWhenStopped = YES;
-    [cell.imageImageViewActivityIndicator startAnimating];
     
-    dispatch_async(dispatch_get_main_queue(), ^{
-        NSData * imageData = [NSData dataWithContentsOfURL:[NSURL URLWithString:beer.imageUrl]];
-        [cell.imageImageViewActivityIndicator stopAnimating];
-        cell.imageImageView.image = [UIImage imageWithData:imageData] ;
-    });
-    
+    if(beer.image){
+        cell.imageImageView.image = beer.image;
+    }else{
+        dispatch_async(dispatch_get_main_queue(), ^{
+            NSData * imageData = [NSData dataWithContentsOfURL:[NSURL URLWithString:beer.imageUrl]];
+            beer.image = [UIImage imageWithData:imageData];
+            cell.imageImageView.image = beer.image;
+            cell.imageImageViewActivityIndicator.hidden = YES;
+        });
+    }
 
             
     return cell;
@@ -125,7 +127,7 @@
         viewModel.currentPage += 1;
         [viewModel fetchList:viewModel.currentPage itemsPerPage:viewModel.itemsPerPage sucessHandler:^(NSArray *beers){
             [self.tableView reloadData];
-        } errorHandler:^(NSDictionary *error){
+        } errorHandler:^(NSError *error){
             
         }];
     }

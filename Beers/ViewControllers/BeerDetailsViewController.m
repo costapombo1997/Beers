@@ -15,11 +15,6 @@
 @implementation BeerDetailsViewController
 
 
-
-
-
-
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     
@@ -49,11 +44,7 @@
     // header
     if(indexPath.section == 0){
         BeerDetailsHeaderCellTableViewCell *cell = [self.tableView dequeueReusableCellWithIdentifier:@"BeerDetailsHeaderCell" forIndexPath:indexPath];
-         dispatch_async(dispatch_get_main_queue(), ^{
-               NSData * imageData = [NSData dataWithContentsOfURL:[NSURL URLWithString:self.beerAsModel.imageUrl]];
-               cell.imageView.image = [UIImage imageWithData:imageData] ;
-           });
-        
+        [cell.beerImageView setImage:self.beerAsModel.image];
         cell.titleLabel.text = self.beerAsModel.name;
         return cell;
     }

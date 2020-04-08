@@ -13,5 +13,6 @@
 @synthesize name;
 @synthesize description;
 @synthesize imageUrl;
+@synthesize image;
 
 @end

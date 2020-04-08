@@ -28,7 +28,7 @@
 
 
 // values just for demo
-- (void)fetchList:(int)page itemsPerPage:(int)per_page sucessHandler:(void (^)(NSArray * _Nonnull))successHandler errorHandler:(void (^)(NSDictionary * _Nonnull))errorHandler{
+- (void)fetchList:(int)page itemsPerPage:(int)per_page sucessHandler:(void (^)(NSArray * _Nonnull))successHandler errorHandler:(void (^)(NSError * _Nonnull))errorHandler{
     self.isLoading = YES;
     [BeersRepo fetchList:page itemsPerPage:per_page sucessHandler:^(NSArray * data){
        
@@ -36,7 +36,9 @@
             BeerModel *beer = [BeerModel new];
             beer.name = [rawBeer objectForKey:@"name"];
             beer.description = [rawBeer objectForKey:@"description"];
+       
             beer.imageUrl = [rawBeer objectForKey:@"image_url"];
+                           
             beer.brewersTips = [rawBeer objectForKey:@"brewers_tips"];
             beer.tagline = [rawBeer objectForKey:@"tagline"];
             [self.beers addObject:beer];
@@ -50,7 +52,7 @@
         
         successHandler(self.beers);
                 
-    } errorHandler:^(NSDictionary * error){
+    } errorHandler:^(NSError * error){
         self.isLoading = NO;
         errorHandler(error);
     }];

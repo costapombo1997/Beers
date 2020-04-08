@@ -20,7 +20,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property int currentPage;
 @property int itemsPerPage;
 
-- (void) fetchList:(int) page itemsPerPage:(int) per_page sucessHandler:(void(^)(NSArray *data)) successHandler errorHandler:(void(^)(NSDictionary *data)) errorHandler;
+- (void) fetchList:(int) page itemsPerPage:(int) per_page sucessHandler:(void(^)(NSArray *data)) successHandler errorHandler:(void(^)(NSError *data)) errorHandler;
 
 @end
 

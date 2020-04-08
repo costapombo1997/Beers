@@ -15,8 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
 @interface BeersRepo : NSObject
 
 
-+ (void) fetchList:(int) page itemsPerPage:(int) per_page sucessHandler:(void(^)(NSArray *data)) successHandler errorHandler:(void(^)(NSDictionary *data)) errorHandler;
-+ (void) fetchBeer:(int)beerId sucessHandler:(void (^)(NSArray * _Nonnull))successHandler errorHandler:(void (^)(NSDictionary * _Nonnull))errorHandler;
++ (void) fetchList:(int) page itemsPerPage:(int) per_page sucessHandler:(void(^)(NSArray *data)) successHandler errorHandler:(void(^)(NSError *data)) errorHandler;
++ (void) fetchBeer:(int)beerId sucessHandler:(void (^)(NSArray * _Nonnull))successHandler errorHandler:(void (^)(NSError * _Nonnull))errorHandler;
 
 
 @end

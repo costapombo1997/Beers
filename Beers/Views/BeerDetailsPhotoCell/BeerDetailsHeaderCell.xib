@@ -15,8 +15,8 @@
                 <rect key="frame" x="0.0" y="0.0" width="446" height="394"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hourglass.bottomhalf.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="eKr-Eq-jZB">
-                        <rect key="frame" x="115.66666666666669" y="31.666666666666657" width="215" height="212"/>
+                    <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="eKr-Eq-jZB">
+                        <rect key="frame" x="115.66666666666669" y="30" width="215" height="215"/>
                         <constraints>
                             <constraint firstAttribute="width" constant="215" id="bIu-HH-UTi"/>
                             <constraint firstAttribute="height" constant="215" id="vsc-oi-1ux"/>
@@ -39,13 +39,11 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
-                <outlet property="imageView" destination="eKr-Eq-jZB" id="okp-Lv-3Ft"/>
+                <outlet property="beerImageView" destination="eKr-Eq-jZB" id="PFI-Mm-r9X"/>
+                <outlet property="imageView" destination="eKr-Eq-jZB" id="bu0-ee-PH1"/>
                 <outlet property="titleLabel" destination="z0n-vn-Ngy" id="a4y-dB-Mak"/>
             </connections>
             <point key="canvasLocation" x="282.60869565217394" y="30.133928571428569"/>
         </tableViewCell>
     </objects>
-    <resources>
-        <image name="hourglass.bottomhalf.fill" catalog="system" width="54" height="64"/>
-    </resources>
 </document>
